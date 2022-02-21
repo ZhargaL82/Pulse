@@ -8,6 +8,17 @@
     margin: 0 auto;
 }
 
+.title {
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 0.8;
+    color: #0d0d0d;
+    text-align: center;
+}
+
 @import 'blocks/promo';
 @import 'blocks/header.scss';
 @import 'blocks/buttons';
+@import 'blocks/advantages';
+@import "blocks/media"
