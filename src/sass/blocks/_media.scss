@@ -55,6 +55,29 @@
             margin-top: 10px;
         }
     }
+    .consultation {
+        .title {
+            &_left {
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+        &__descr {
+            text-align: center;
+        }
+        .feed-form {
+            display: block;
+            margin: 36px auto;
+            input {
+                width: 300px;
+            }
+        }
+        .button {
+            &_submit {
+                width: 300px;
+            }
+        }
+    }
 }
 @media (max-width: 575px) {
     .header {
