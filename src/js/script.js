@@ -126,4 +126,19 @@ $(document).ready(function(){
         req.onerror = function() {alert("Ошибка отправки запроса");};
         req.send(new FormData(event.target));
     }
+
+    // Smooth scroll and page up
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href^='#']").click(function() {
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
 });
